@@ -1,0 +1,9 @@
+import "utils/casts/field_to_u32"
+import "utils/casts/u32_to_field"
+
+def main(field number, field divider) -> field:
+    u32 a = field_to_u32(number)   
+    u32 b = field_to_u32(divider)
+    u32 res_u32 = a % b
+    field res = u32_to_field(res_u32)
+    return res

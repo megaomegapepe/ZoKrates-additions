@@ -1,0 +1,7 @@
+def main(field number, field divider) -> (field):
+    field res = number
+    for u32 i in 0..100 do
+        field subtracted = if res >= divider then divider else 0 fi
+        res = res - subtracted
+    endfor
+    return res
